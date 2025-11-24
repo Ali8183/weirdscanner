@@ -1,13 +1,16 @@
-openapi: 3.0.1
+openapi: 3.1.0
 info:
   title: GPT Weird Scanner API
-  description: Analyze prompts for cultural "weird" risks and produce cleaned and culturally adapted prompts.
-  version: '1.0.0'
+  version: "1.0.0"
+  description: Analyze prompts for GPT-Weird risks and produce cleaned, culturally adapted prompts.
+
 servers:
   - url: https://weirdscanner-ait3.vercel.app
+
 paths:
-  /weirdscan:
+  /api/weirdscan:
     post:
+      operationId: post_api_weirdscan
       summary: Scan text for GPT-Weird risks and clean it
       requestBody:
         required: true
@@ -18,9 +21,9 @@ paths:
               properties:
                 text:
                   type: string
-                  example: "Write an academically structured essay about personal productivity referencing Western psychological theories..."
+                  example: "Write an academically structured essay..."
       responses:
-        '200':
+        "200":
           description: Scan results
           content:
             application/json:
