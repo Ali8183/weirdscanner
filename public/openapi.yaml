@@ -3,6 +3,8 @@ info:
   title: GPT Weird Scanner API
   description: Analyze prompts for cultural "weird" risks and produce cleaned and culturally adapted prompts.
   version: '1.0.0'
+servers:
+  - url: https://weirdscanner-ait3.vercel.app
 paths:
   /weirdscan:
     post:
