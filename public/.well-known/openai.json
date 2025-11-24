@@ -7,9 +7,9 @@
   "auth": { "type": "none" },
   "api": {
     "type": "openapi",
-    "url": "https://<REPLACE_WITH_YOUR_DOMAIN>/openapi.yaml"
+    "url": "https://weirdscanner-ait3.vercel.app/openapi.yaml"
   },
-  "logo_url": "https://<REPLACE_WITH_YOUR_DOMAIN>/logo.png",
+  "logo_url": "https://weirdscanner-ait3.vercel.app/logo.png",
   "contact_email": "you@your-domain.com",
-  "legal_info_url": "https://<REPLACE_WITH_YOUR_DOMAIN>/legal"
+  "legal_info_url": "https://weirdscanner-ait3.vercel.app/legal"
 }
