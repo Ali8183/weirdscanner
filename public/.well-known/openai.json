@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "name_for_model": "weirdscanner",
+  "name_for_human": "GPT Weird Scanner",
+  "description_for_model": "Analyze prompts for GPT-Weird risks and return cleaned, culturally adapted prompts.",
+  "description_for_human": "Promptları tarar, 'weird' risklerini listeler, Türk-İslam temelli temiz prompt ve kültürler arası çevirilerini üretir.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://<REPLACE_WITH_YOUR_DOMAIN>/openapi.yaml"
+  },
+  "logo_url": "https://<REPLACE_WITH_YOUR_DOMAIN>/logo.png",
+  "contact_email": "you@your-domain.com",
+  "legal_info_url": "https://<REPLACE_WITH_YOUR_DOMAIN>/legal"
+}

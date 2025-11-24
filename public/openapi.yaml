@@ -1,0 +1,35 @@
+openapi: 3.0.1
+info:
+  title: GPT Weird Scanner API
+  description: Analyze prompts for cultural "weird" risks and produce cleaned and culturally adapted prompts.
+  version: '1.0.0'
+paths:
+  /weirdscan:
+    post:
+      summary: Scan text for GPT-Weird risks and clean it
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+                  example: "Write an academically structured essay about personal productivity referencing Western psychological theories..."
+      responses:
+        '200':
+          description: Scan results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  risks:
+                    type: array
+                    items:
+                      type: string
+                  cleaned_prompt_tr_islam:
+                    type: string
+                  cultural_versions:
+                    type: object
